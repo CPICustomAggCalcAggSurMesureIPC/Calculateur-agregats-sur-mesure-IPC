@@ -1,10 +1,21 @@
 
-# The CPI Custom Aggregate Calculator (en français: le Calculateur d’agrégats sur mesure de l’IPC) is an interactive app which allows users of Statistics Canada data to select published CPI geographies and products and calculate Custom CPIs as aggregates of the selected series or as All-items excluding the selections. Results are displayed in graphs and tables as percentage changes, index levels, or contributions to All-items percentage change.
+## The CPI Custom Aggregate Calculator / le Calculateur d’agrégats sur mesure de l’IPC
+- Is an interactive app which allows users of Statistics Canada data to select published CPI geographies and products and calculate Custom CPIs as aggregates of the selected series or as All-items excluding the selections. 
+- Results are displayed in graphs and tables as percentage changes, index levels, or contributions to All-items percentage change.
 
 ## Download and run the app in R
 You can download the R code from GitHub and run it on your device using the following R code:
 - English version: shiny::runGitHub("CPI-Custom-Aggregate-Calculator", "CPICustomAggCalcAggSurMesureIPC")
 - French version: shiny::runGitHub("Calculateur-agregats-sur-mesure-IPC", "CPICustomAggCalcAggSurMesureIPC")
+- If this method fails, try following the instructions at https://docs.github.com/en/get-started/start-your-journey/downloading-files-from-github. 
+    - In your browser, enter the URL to the GitHub repository, 
+	    - English: https://github.com/CPICustomAggCalcAggSurMesureIPC/CPI-Custom-Aggregate-Calculator
+		- French: https://github.com/CPICustomAggCalcAggSurMesureIPC/Calculateur-agregats-sur-mesure-IPC
+	- In the Code button dropdown, select Download ZIP
+	- Navigate to the downloaded .zip file, then copy the directory elsewhere on your device
+	- Open the directory you just copied containing the English or French version
+	- Run the file app.r
+		
 
 ## Using the CPI Custom Aggregate Calculator / Calculateur d’agrégats sur mesure de l’IPC
 - English instructions: https://github.com/CPICustomAggCalcAggSurMesureIPC/CPIAggr
