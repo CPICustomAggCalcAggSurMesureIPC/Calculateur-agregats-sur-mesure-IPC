@@ -29,9 +29,53 @@
 #---------------------------------
 
 
-library("shiny")
-library("dplyr")
-library("tidyr")
+if (!require("pacman")){
+  install.packages("pacman")
+}
+
+# Load packages
+pacman::p_load(
+  dplyr,
+  tidyr,
+  readxl,
+  sqldf,
+  shiny,
+  shinydashboard,
+  shinyjs,
+  reactable,
+  waiter,
+  plotly,
+  httr,
+  jsonlite,
+  purrr,
+  shinyBS,
+  shinyWidgets,
+  lubridate,
+  scales
+)
+
+
+library(dplyr)
+library(tidyr)
+library(readxl)
+library(httr)
+library(jsonlite)
+library(sqldf)
+library(lubridate)
+library(shiny)
+library(shinydashboard)
+library(shinyjs)
+library(shinyBS) # info buttons
+library(reactable)
+library(waiter)
+library(plotly)
+library(scales)
+library(shinyWidgets)
+library(purrr)
+library(DBI)
+library(odbc)
+  
+
 
 
 #cAppLanguage    <- "English"
@@ -1763,7 +1807,7 @@ shinydashboard::dashboardBody(
    		      shiny::column(12, h3(fGetEnFrText("CustAggGroupStepText"), align = "left"))),
         shiny::fluidRow(shiny::column(12, div(style = "height: 10px;"))),
 
-    	   shiny::fluidRow(
+        shiny::fluidRow(
           shiny::column(4, style = "                    padding-right: 2px;", 
             div(shiny::selectInput("inSelPopularAggGeo", width = "100%",  
                   label = div(HTML(fGetEnFrText("CustAggGroupGeoText")),  style = "font-size: 80%; font-weight: normal;"),
